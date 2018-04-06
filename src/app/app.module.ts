@@ -16,6 +16,12 @@ import { MembersComponent } from './members/members.component';
 import { AfService } from './providers/af.service';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { AdminPageComponent } from './admin-page/admin-page.component';
+import { AdminGuard } from './guards/admin.guard';
+import { SubscriberGuard } from './guards/subscriber.guard';
 
 @NgModule({
   declarations: [
@@ -24,7 +30,11 @@ import { AppRoutingModule, routingComponents } from './app-routing.module';
     EmailComponent,
     SignupComponent,
     MembersComponent,
-    routingComponents
+    routingComponents,
+    NavbarComponent,
+    SidenavComponent,
+    HomePageComponent,
+    AdminPageComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +46,7 @@ import { AppRoutingModule, routingComponents } from './app-routing.module';
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
     AngularFirestoreModule
   ],
-  providers: [AfService],
+  providers: [AfService, AdminGuard, SubscriberGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
