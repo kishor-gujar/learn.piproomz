@@ -3,21 +3,19 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { environment } from '../environments/environment';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { EmailComponent } from './email/email.component';
 import { SignupComponent } from './signup/signup.component';
 import { MembersComponent } from './members/members.component';
+import { AfService } from './providers/af.service';
 
-export const firebaseConfig = {
-  apiKey: 'AIzaSyBEFbhrGdKFgO5y02qAgoAqBHc3NUQsxo0',
-    authDomain: 'piproomz-7ed24.firebaseapp.com',
-    databaseURL: 'https://piproomz-7ed24.firebaseio.com',
-    projectId: 'piproomz-7ed24',
-    storageBucket: 'piproomz-7ed24.appspot.com',
-    messagingSenderId: '1098845388678'
-};
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -25,15 +23,19 @@ export const firebaseConfig = {
     LoginComponent,
     EmailComponent,
     SignupComponent,
-    MembersComponent
+    MembersComponent,
+    routingComponents
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AngularFireModule.initializeApp(firebaseConfig)
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule, // imports firebase/firestore, only needed for database features
+    AngularFireAuthModule, // imports firebase/auth, only needed for auth features
   ],
-  providers: [],
+  providers: [AfService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
