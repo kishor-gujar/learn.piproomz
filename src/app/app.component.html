@@ -1,1 +1,21 @@
-<router-outlet></router-outlet>
+<div class="container-fluid">
+
+  <app-topbar></app-topbar>
+
+  <div class="row">
+
+    <app-sidenav></app-sidenav>
+
+    <div class="offset-md-1 main-content col-md-11 col-sm-12">
+      <div class="row">
+        <router-outlet></router-outlet>
+       <!-- <app-right-actions></app-right-actions> -->
+      </div>
+      <app-footer></app-footer>
+
+    </div>
+  </div>
+</div>
+
+
+

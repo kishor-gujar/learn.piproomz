@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule, AngularFirestore } from 'angularfire2/firestore';
@@ -18,10 +18,14 @@ import { AfService } from './providers/af.service';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import { HomePageComponent } from './home-page/home-page.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
 import { AdminGuard } from './guards/admin.guard';
 import { SubscriberGuard } from './guards/subscriber.guard';
+import { TopbarComponent } from './topbar/topbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { RightActionsComponent } from './right-actions/right-actions.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { NotifyService } from './notiy.service';
 
 @NgModule({
   declarations: [
@@ -33,12 +37,16 @@ import { SubscriberGuard } from './guards/subscriber.guard';
     routingComponents,
     NavbarComponent,
     SidenavComponent,
+    AdminPageComponent,
+    TopbarComponent,
+    FooterComponent,
+    RightActionsComponent,
     HomePageComponent,
-    AdminPageComponent
+
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    ReactiveFormsModule,
     HttpModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
@@ -46,7 +54,7 @@ import { SubscriberGuard } from './guards/subscriber.guard';
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
     AngularFirestoreModule
   ],
-  providers: [AfService, AdminGuard, SubscriberGuard],
+  providers: [AfService, AdminGuard, SubscriberGuard, NotifyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

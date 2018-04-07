@@ -15,10 +15,9 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.afService.user$.subscribe(user => this.user = user)
+    this.afService.user.subscribe(user => this.user = user);
   }
 
   login() {
-   this.afService.loginWithGoogle();
   }
 }

@@ -10,7 +10,7 @@ export class SubscriberGuard implements CanActivate {
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-    return this.af.user$.pipe(
+    return this.af.user.pipe(
         take(1),
         map(user => user && user.roles.subscriber ? true : false),
         tap(isSbusciber => {

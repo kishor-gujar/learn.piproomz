@@ -10,7 +10,7 @@ export class AdminGuard implements CanActivate {
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-    return this.af.user$.pipe(
+    return this.af.user.pipe(
       take(1),
       map(user => user && user.roles.admin ? true : false),
       tap(isAdmin => {
