@@ -26,9 +26,16 @@
       
       
       
-  <form [formGroup]="detailForm" *ngIf="user.uid && !user.phone" (ngSubmit)="setDetails(user)">
+  <form [formGroup]="detailForm" *ngIf="user.uid && (!user.displayName || !user.phone || !user.age || !user.address.city)" (ngSubmit)="setDetails(user)">
     
     <h3>Set your Additional information</h3>
+    <label for="name">Name</label>
+    <input type="text" formControlName="name">
+
+    <div *ngIf="name.invalid && name.dirty">
+      name number is required...
+  </div>
+
     <label for="phone">Phone#</label>
     <input type="text" formControlName="phone">
 
@@ -41,42 +48,49 @@
     <div *ngIf="age.invalid && age.dirty">
       Age is required...
   </div>
-    <label for="address">Address</label>
-    <input type="text" formControlName="full_address">
+  <label for="full_address">Address</label>
+  <input type="text" formControlName="full_address">
 
-    <div *ngIf="full_address.invalid && full_address.dirty">
-      Address is required...
-  </div>
-    <label for="street_name">Street Name</label>
-    <input type="text" formControlName="street_name">
+  <div *ngIf="full_address.invalid && full_address.dirty">
+    Address is required...
+</div>
 
-    <div *ngIf="street_name.invalid && street_name.dirty">
-    Street Name is required...
-  </div>
-    <label for="city">City</label>
-    <input type="text" formControlName="city">
+<label for="street_name">Street Name</label>
+<input type="text" formControlName="street_name">
 
-    <div *ngIf="city.invalid && city.dirty">
-      City is required...
-  </div>
-    <label for="country">Country</label>
-    <input type="counttry" formControlName="country">
+<div *ngIf="street_name.invalid && street_name.dirty">
+  Street is required...
+</div>
 
-    <div *ngIf="country.invalid && country.dirty">
-      Country is required...
-  </div>
-    <label for="postal">Postal</label>
-    <input type="postal" formControlName="postal">
+  <label for="city">City</label>
+  <input type="text" formControlName="city">
 
-    <div *ngIf="postal.invalid && postal.dirty">
-      Country is required...
-  </div>
+  <div *ngIf="city.invalid && city.dirty">
+    City is required...
+</div>
+
+  <label for="country">Country</label>
+  <input type="counttry" formControlName="country">
+
+  <div *ngIf="country.invalid && country.dirty">
+    Country is required...
+</div>
+
+  <div *ngIf="postal.invalid && postal.dirty">
+    Postal is required...
+</div>
+<label for="postal">Postal</label>
+<input type="postal" formControlName="postal">
+
+<div *ngIf="postal.invalid && postal.dirty">
+  Country is required...
+</div>
     <button type="submit" [disabled]="!detailForm.valid">Submit</button>
   </form>
 
   <p *ngIf="user.phone">
-      You have completed the form!
-      {{ user | json }}
+    You are registered..
+    We will Activate account soon...
   </p>
 
 </ng-container>

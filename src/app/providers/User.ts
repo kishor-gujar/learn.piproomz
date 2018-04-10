@@ -7,6 +7,7 @@ export interface User {
   age?: string;
   address: Address;
   roles: Roles;
+  active: boolean
 }
 
 export interface Roles {

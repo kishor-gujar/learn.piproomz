@@ -29,6 +29,9 @@ export class SignupComponent implements OnInit {
 
     // second step
       this.detailForm = this.fb.group({
+        'name': ['', [
+          Validators.required
+        ]],
         'phone': ['', [
           Validators.required
         ]],
@@ -59,10 +62,12 @@ export class SignupComponent implements OnInit {
   }
   get email() { return this.signupForm.get('email') }
   get password() { return this.signupForm.get('password') }
+  
+  get name() { return this.detailForm.get('name') }
   get phone() { return this.detailForm.get('phone') }
   get age() { return this.detailForm.get('age') }
-  get fullAddress() { return this.detailForm.get('full_address') }
-  get streetName() { return this.detailForm.get('street_name') }
+  get full_address() { return this.detailForm.get('full_address') }
+  get street_name() { return this.detailForm.get('street_name') }
   get city() { return this.detailForm.get('city') }
   get country() { return this.detailForm.get('country') }
   get postal() { return this.detailForm.get('postal') }
@@ -74,24 +79,18 @@ export class SignupComponent implements OnInit {
 
   // Setp 2 
   setDetails(user) {
-   console.log(this.phone.value)
-   console.log(this.age.value)
-   console.log(this.fullAddress.value)
-   console.log(this.streetName.value)
-   console.log(this.city.value)
-   console.log(this.country.value)
-   console.log(this.postal.value)
-    // return this.auth.updateUser(user, {
-    //   phone: this.phone.value,
-    //   age: this.age.value,
-    //   address: {
-    //     full_addres: this.fullAddress.value,
-    //     street_name: this.streetName.value,
-    //     city: this.city.value,
-    //     country: this.country.value,
-    //     postal: this.postal.value
-    //   }
-    // })
+    return this.auth.updateUser(user, {
+      displayName: this.name.value,
+      phone: this.phone.value,
+      age: this.age.value,
+      address: {
+        full_addres: this.full_address.value,
+        street_name: this.street_name.value,
+        city: this.city.value,
+        country: this.country.value,
+        postal: this.postal.value
+      }
+    })
   }
 }
 

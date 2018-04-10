@@ -47,6 +47,7 @@ export class AfService {
         displayName: user.displayName,
         photoURL: user.photoURL,
         email: user.email,
+        active: false,
         roles: {
           subscriber: false,
           admin: false
@@ -69,5 +70,15 @@ export class AfService {
   //  update propertis on the user document 
   updateUser(user: User, data: any) {
     return this.afs.doc(`users/${user.uid}`).update(data);
+  }
+
+
+  googleLogin() {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    return this.oAuthLogin(provider);
+  }
+
+  private oAuthLogin(provider) {
+    return this.afAuth.auth.signInWithPopup(provider);
   }
 }
