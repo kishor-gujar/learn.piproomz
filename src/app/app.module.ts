@@ -26,6 +26,10 @@ import { FooterComponent } from './footer/footer.component';
 import { RightActionsComponent } from './right-actions/right-actions.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NotifyService } from './notiy.service';
+import { Step2Component } from './step2/step2.component';
+import { Step3Component } from './step3/step3.component';
+import { Step4Component } from './step4/step4.component';
+import { Step5Component } from './step5/step5.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +46,10 @@ import { NotifyService } from './notiy.service';
     FooterComponent,
     RightActionsComponent,
     HomePageComponent,
+    Step2Component,
+    Step3Component,
+    Step4Component,
+    Step5Component,
 
   ],
   imports: [
