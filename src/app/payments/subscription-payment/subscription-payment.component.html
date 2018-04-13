@@ -1,0 +1,14 @@
+<button (click)="openHandler()">
+  Subscribe for $15/m
+</button>
+<div *ngIf="pmt.membership | async as pro">
+
+  <button *ngIf="pro.status != 'active'" (click)="openHandler()">
+    Subscribe for $15 per Month
+  </button>
+
+  <div *ngIf="pro.status == 'active'">
+    <h3>Subscription is Active</h3> 
+  </div>
+
+</div>
