@@ -3,8 +3,6 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFireDatabase } from 'angularfire2/database';
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/do';
-import { Observable } from '@firebase/util';
-import { User } from '../providers/User';
 
 
 @Injectable()
@@ -16,9 +14,9 @@ export class PaymentService {
 
     this.membership = this.afAuth.authState
       .do(user => this.userId = user.uid)
-      // .switchMap( user => {
-        // return this.db.object(`users/${user.uid}/pro-membership`);
-      // });
+      .switchMap( user => {
+        return this.db.object(`users/${user.uid}/pro-membership`);
+      });
   }
 
     processPayment(token: any) {

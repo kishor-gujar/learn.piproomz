@@ -1,3 +1,11 @@
-<p>
-  subscription-payment works!
-</p>
+<div *ngIf="pmt.membersip | async as pro">
+  <button *ngIf="pro.status != 'active'" (click)="openHandler()">
+    subscribe for $15 per month
+  </button>
+</div>
+
+<div *ngIf="pro.status == 'active'">
+  
+  Subscribstion is Active
+
+</div>
