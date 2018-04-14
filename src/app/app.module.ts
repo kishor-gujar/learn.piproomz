@@ -23,7 +23,6 @@ import { AdminGuard } from './guards/admin.guard';
 import { SubscriberGuard } from './guards/subscriber.guard';
 import { TopbarComponent } from './topbar/topbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { RightActionsComponent } from './right-actions/right-actions.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NotifyService } from './notiy.service';
 import { Step2Component } from './step2/step2.component';
@@ -44,7 +43,6 @@ import { Step5Component } from './step5/step5.component';
     AdminPageComponent,
     TopbarComponent,
     FooterComponent,
-    RightActionsComponent,
     HomePageComponent,
     Step2Component,
     Step3Component,
