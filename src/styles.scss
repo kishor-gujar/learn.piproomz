@@ -47,17 +47,17 @@ z-index: 9999;
 }
 }
 .sidebar{
-padding-top: 80px;
-  background-color: #3C3C3C;
-  position: fixed;
-  // width:200px;
-  top:0;
-  bottom:0;
-  // float:left;
-  width:250px;
+    padding-top: 80px;
+    background-color: #3C3C3C;
+    position: fixed;
+    // width:200px;
+    top:0;
+    bottom:0;
+    // float:left;
+    width:250px;
 
   img{
-      width:80px;
+      width:55px;
       height: auto;
       padding-top: 15px;
       padding-right: 10px;
@@ -66,6 +66,8 @@ padding-top: 80px;
       margin: 0 auto;
   }
   h4{
+      color: black;
+      font-size: 1em;
       text-align: center;
       margin: 0;
       padding: 0;
