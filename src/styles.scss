@@ -18,9 +18,7 @@ z-index: 9999;
   background-color: #3C3C3C;
   width: 100%;
   button{
-      // float: right;
       margin: 20px;
-      // width: 150px;
       border-radius: 25px;
   }
   .chat, .chat:active:focus{
@@ -206,7 +204,6 @@ z-index: 9999;
 @media (max-width: 575px) {
   .logo{
       height: 100px;
-      margin: 10px;
       padding-top: 15px;
   }
   .logo1{
@@ -233,11 +230,10 @@ z-index: 9999;
       margin-top: 20px;
   }
 }
-.sidebar{
-  display: inline;
-position: relative;
-padding-top: 0;
-width: 100%;
+.sidebar {
+    position: relative;
+    padding-top: 0;
+    width: 100%;
 //	clear: both;
   img{
      display: inline;
@@ -268,6 +264,9 @@ width: 100%;
   display: none;
 }
 
+.welcome {
+    margin-top: 50px;
+}
 #triangle-bottomright {
   clear: both;
   background: url('/assets/img/Path-mobile.png');
@@ -322,7 +321,6 @@ margin-top: 5px;
 @media (min-width: 576px) and (max-width: 767px) {
   .logo{
       height: 100px;
-      margin: 10px;
       padding-top: 15px;
   }
   .logo1{
@@ -412,7 +410,6 @@ margin-top: 5px;
 @media (min-width: 768px) and (max-width: 991px) {
   .logo{
       height: 200px;
-      margin: 10px;
       padding-top: 15px;
   }
   .logo1{
@@ -506,7 +503,6 @@ width: 100%;
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199px) {
      .logo{
-      // margin: 10px;
       padding-top: 15px;
   }
   .logo1{
