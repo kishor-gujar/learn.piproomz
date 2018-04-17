@@ -1,9 +1,6 @@
 *{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-body{
-  background-color: #C96756;
-}
 .logo1{
   background-color: #191919;
 z-index: 9999;
@@ -115,6 +112,71 @@ z-index: 9999;
       margin-right:40px;
   float: right
   }
+  
+  
+  .card-title{
+    color: white;
+    img{
+    width: 40px;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 40px;
+    float: none;
+    }
+}
+
+.card{
+   border-radius: 25px;
+    h2{
+        text-align: center;
+        color: #63961D;
+    }
+    li{
+        color: white;
+    }
+    hr {
+        opacity: .28;
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #707070;
+        margin: 1em 0;
+        padding: 0; 
+    }
+}
+
+  .forex-card{
+    background: #89BF3F;
+    .subscribe, .subscribe:active:focus{
+        margin: 10px;
+            background-color: #89BF3F;
+            border-color: #707070;
+            border-radius: 25px;
+    }
+    .trial, .trial:active:focus{
+        background-color: #6FA02B;
+        border-color: #707070;
+        border-radius: 25px;
+    }
+}
+
+.crypto-card{
+    h2{
+        color: #fff;
+    }
+    background: #3F7ABF;
+    .subscribe, .subscribe:active:focus{
+        margin: 10px;
+            background-color: #3F7ABF;
+            border-color: #707070;
+            border-radius: 25px;
+    }
+    .fund-platform, .fund-platform:active:focus{
+        background-color: #356CAC;
+        border-color: #3F7ABF;
+        border-radius: 25px;
+    }
+}
 }
 
 #triangle-bottomright {

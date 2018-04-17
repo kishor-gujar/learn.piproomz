@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./step4.component.scss']
 })
 export class Step4Component implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit() {
+    document.body.style.backgroundColor = "#6B8D44";
+  }
+  ngOnDestroy(){
+    document.body.style.backgroundColor = "none";
   }
 
 }

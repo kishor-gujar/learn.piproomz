@@ -10,6 +10,10 @@ export class Step5Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    document.body.style.backgroundColor = "#4C7E7E";
+  }
+  ngOnDestroy(){
+    document.body.style.backgroundColor = "none";
   }
 
 }

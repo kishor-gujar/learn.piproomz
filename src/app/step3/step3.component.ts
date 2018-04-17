@@ -10,6 +10,10 @@ export class Step3Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    document.body.style.backgroundColor = "#497B93";
+  }
+  ngOnDestroy(){
+    document.body.style.backgroundColor = "none";
   }
 
 }
