@@ -16,7 +16,6 @@ import { MembersComponent } from './members/members.component';
 import { AfService } from './providers/af.service';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
-import { NavbarComponent } from './navbar/navbar.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
 import { AdminGuard } from './guards/admin.guard';
@@ -38,7 +37,6 @@ import { Step5Component } from './step5/step5.component';
     SignupComponent,
     MembersComponent,
     routingComponents,
-    NavbarComponent,
     SidenavComponent,
     AdminPageComponent,
     TopbarComponent,

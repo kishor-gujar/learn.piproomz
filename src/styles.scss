@@ -14,9 +14,11 @@ z-index: 9999;
  height: auto;
 }
 
-.mian-actions{
+.main-actions{
+  margin-bottom: 20px;
   background-color: #3C3C3C;
   width: 100%;
+  text-align: center;
   button{
       margin: 20px;
       border-radius: 25px;
@@ -78,7 +80,7 @@ z-index: 9999;
       width: 40px;
   }
   .notebook{
-      margin-bottom: 50px;
+      margin-top: 50px;
   }
 }
 .main-content {
@@ -221,7 +223,9 @@ z-index: 9999;
       margin-top: 20px;
   }
 
-.mian-actions{
+.main-actions{
+    margin-bottom: 0;
+    text-align: center;
   button{
       display: inline;
       font-size: .8em;
@@ -231,7 +235,7 @@ z-index: 9999;
   }
 }
 .sidebar {
-    position: relative;
+    position: static;
     padding-top: 0;
     width: 100%;
 //	clear: both;
@@ -243,6 +247,9 @@ z-index: 9999;
   h4 {
       display: none;
   }
+}
+.mt-100 {
+    margin-top: 100px;
 }
 .actions{
 
@@ -264,9 +271,6 @@ z-index: 9999;
   display: none;
 }
 
-.welcome {
-    margin-top: 50px;
-}
 #triangle-bottomright {
   clear: both;
   background: url('/assets/img/Path-mobile.png');
@@ -330,7 +334,8 @@ margin-top: 5px;
       }
   }
 
-.mian-actions{
+.main-actions{
+    text-align: center;
   button{
       display: inline;
       font-size: 1em;
@@ -419,7 +424,7 @@ margin-top: 5px;
       }
   }
 
-.mian-actions{
+.main-actions{
   button{
       display: inline;
       font-size: 1em;
@@ -513,12 +518,13 @@ width: 100%;
       }
   }
 
-.mian-actions{
+.main-actions{
   button{
       display: inline;
       font-size: 1em;
       width: 140px;
       margin: 25px;
+      text-align: center;
   }
 }
 .sidebar{
@@ -542,7 +548,7 @@ width: 100%;
       position: fixed;
   }
   .notebook{
-      margin-top: 5px;
+      margin-top: 20px;
   }
   .arrow {
       margin-top: 100px;
