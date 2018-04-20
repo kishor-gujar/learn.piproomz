@@ -29,6 +29,13 @@ import { Step3Component } from './step3/step3.component';
 import { Step4Component } from './step4/step4.component';
 import { Step5Component } from './step5/step5.component';
 import { Step1Chapter1Component } from './step1-chapter1/step1-chapter1.component';
+import { Step1Chapter2Component } from './step1-chapter2/step1-chapter2.component';
+import { Step2Chapter1Component } from './step2-chapter1/step2-chapter1.component';
+import { Step2Chapter2Component } from './step2-chapter2/step2-chapter2.component';
+import { Step3Chapter2Component } from './step3-chapter2/step3-chapter2.component';
+import { Step3Chapter1Component } from './step3-chapter1/step3-chapter1.component';
+import { Step4Chapter1Component } from './step4-chapter1/step4-chapter1.component';
+import { Step4Chapter2Component } from './step4-chapter2/step4-chapter2.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +55,13 @@ import { Step1Chapter1Component } from './step1-chapter1/step1-chapter1.componen
     Step4Component,
     Step5Component,
     Step1Chapter1Component,
+    Step1Chapter2Component,
+    Step2Chapter1Component,
+    Step2Chapter2Component,
+    Step3Chapter2Component,
+    Step3Chapter1Component,
+    Step4Chapter1Component,
+    Step4Chapter2Component,
 
   ],
   imports: [
