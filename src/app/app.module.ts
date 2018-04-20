@@ -22,11 +22,7 @@ import { AdminGuard } from './guards/admin.guard';
 import { SubscriberGuard } from './guards/subscriber.guard';
 import { TopbarComponent } from './topbar/topbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { HomePageComponent } from './home-page/home-page.component';
 import { NotifyService } from './notiy.service';
-import { Step2Component } from './step2/step2.component';
-import { Step3Component } from './step3/step3.component';
-import { Step4Component } from './step4/step4.component';
 import { Step5Component } from './step5/step5.component';
 import { Step1Chapter1Component } from './step1-chapter1/step1-chapter1.component';
 import { Step1Chapter2Component } from './step1-chapter2/step1-chapter2.component';
@@ -49,10 +45,6 @@ import { Step4Chapter2Component } from './step4-chapter2/step4-chapter2.componen
     AdminPageComponent,
     TopbarComponent,
     FooterComponent,
-    HomePageComponent,
-    Step2Component,
-    Step3Component,
-    Step4Component,
     Step5Component,
     Step1Chapter1Component,
     Step1Chapter2Component,
