@@ -9,7 +9,11 @@ export class Step3Chapter1Component implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
 
+  ngOnInit() {
+    document.body.style.backgroundColor = "#497B93";
+  }
+  ngOnDestroy(){
+    document.body.style.backgroundColor = "none";
+  }
 }

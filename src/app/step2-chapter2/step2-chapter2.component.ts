@@ -10,6 +10,10 @@ export class Step2Chapter2Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    document.body.style.backgroundColor = "#2A5DA2";
+  }
+  ngOnDestroy(){
+    document.body.style.backgroundColor = "none";
   }
 
 }
