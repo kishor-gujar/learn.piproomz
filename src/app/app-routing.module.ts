@@ -1,8 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { AdminPageComponent } from './admin-page/admin-page.component';
-import { AdminGuard } from './guards/admin.guard';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
 import { Step1Chapter1Component } from './step1-chapter1/step1-chapter1.component';
@@ -25,10 +22,6 @@ const routes: Routes = [
   { path: 'step4/chapter1', component: Step4Chapter1Component },
   { path: 'step4/chapter2', component: Step4Chapter2Component },
   { path: 'step5', component: Step5Component },
-
-  { path: 'login', component: LoginComponent },
-  { path: 'signup', component: SignupComponent },
-  { path: 'admin', component: AdminPageComponent, canActivate: [AdminGuard] }
 ];
 
 @NgModule({
@@ -37,4 +30,4 @@ const routes: Routes = [
 })
 
 export class AppRoutingModule {}
-export const routingComponents = [LoginComponent];
+export const routingComponents = [];
