@@ -98,6 +98,12 @@
   optionalDependencies:
     node-sass "^4.7.2"
 
+"@angular/common@4.4.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-4.4.5.tgz#bd5179dc922adbf4c3ea6dfb19e73cb849ffdc37"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/common@^5.2.0":
   version "5.2.9"
   resolved "https://registry.yarnpkg.com/@angular/common/-/common-5.2.9.tgz#beb25d4434498abae56bd8dc2c01ade3f6c45e81"
@@ -116,6 +122,12 @@
 "@angular/compiler@^5.2.0":
   version "5.2.9"
   resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-5.2.9.tgz#1d03bc1e8b38c259bc58114d691c2140d244f8f5"
+  dependencies:
+    tslib "^1.7.1"
+
+"@angular/core@^4.4.5":
+  version "4.4.7"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-4.4.7.tgz#18bdc17bec7bdccb6424402fc90550e15a6d221b"
   dependencies:
     tslib "^1.7.1"
 
@@ -147,9 +159,21 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/platform-browser@4.4.5":
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-4.4.5.tgz#74eb91c0b758126f26d53ee56c7cf4668bd9cac5"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/platform-browser@^5.2.0":
   version "5.2.9"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-5.2.9.tgz#9ee76327b1b3affad68ffa839058661b7704bc2c"
+  dependencies:
+    tslib "^1.7.1"
+
+"@angular/router@^4.2.4":
+  version "4.4.7"
+  resolved "https://registry.yarnpkg.com/@angular/router/-/router-4.4.7.tgz#b642ae00f5f93f5e864f3d2b3e735509cd814c05"
   dependencies:
     tslib "^1.7.1"
 
@@ -2059,6 +2083,17 @@ duplexify@^3.4.2, duplexify@^3.5.3:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
+
+easy-ngx-google-analytics@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/easy-ngx-google-analytics/-/easy-ngx-google-analytics-1.0.5.tgz#1a78af260ee36ee2473bac7d5cb3a6eade40ecf3"
+  dependencies:
+    "@angular/common" "4.4.5"
+    "@angular/core" "^4.4.5"
+    "@angular/platform-browser" "4.4.5"
+    "@angular/router" "^4.2.4"
+    rxjs "^5.4.2"
+    zone.js "^0.8.14"
 
 ecc-jsbn@~0.1.1:
   version "0.1.1"
@@ -5781,6 +5816,12 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
+rxjs@^5.4.2:
+  version "5.5.10"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.10.tgz#fde02d7a614f6c8683d0d1957827f492e09db045"
+  dependencies:
+    symbol-observable "1.0.1"
+
 rxjs@^5.5.6:
   version "5.5.8"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.8.tgz#b2b0809a57614ad6254c03d7446dea0d83ca3791"
@@ -7389,6 +7430,10 @@ yeast@0.1.2:
 yn@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/yn/-/yn-2.0.0.tgz#e5adabc8acf408f6385fc76495684c88e6af689a"
+
+zone.js@^0.8.14:
+  version "0.8.26"
+  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.26.tgz#7bdd72f7668c5a7ad6b118148b4ea39c59d08d2d"
 
 zone.js@^0.8.19:
   version "0.8.25"

@@ -10,9 +10,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { EmailComponent } from './email/email.component';
 import { SignupComponent } from './signup/signup.component';
-import { MembersComponent } from './members/members.component';
 import { AfService } from './providers/af.service';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
@@ -33,13 +31,13 @@ import { Step3Chapter1Component } from './step3-chapter1/step3-chapter1.componen
 import { Step4Chapter1Component } from './step4-chapter1/step4-chapter1.component';
 import { Step4Chapter2Component } from './step4-chapter2/step4-chapter2.component';
 
+import { EasyNgxGoogleAnalyticsModule} from 'easy-ngx-google-analytics';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    EmailComponent,
     SignupComponent,
-    MembersComponent,
     routingComponents,
     SidenavComponent,
     AdminPageComponent,
@@ -58,6 +56,7 @@ import { Step4Chapter2Component } from './step4-chapter2/step4-chapter2.componen
   ],
   imports: [
     BrowserModule,
+    EasyNgxGoogleAnalyticsModule,
     ReactiveFormsModule,
     HttpModule,
     AppRoutingModule,
