@@ -31,7 +31,6 @@ import { Step3Chapter1Component } from './step3-chapter1/step3-chapter1.componen
 import { Step4Chapter1Component } from './step4-chapter1/step4-chapter1.component';
 import { Step4Chapter2Component } from './step4-chapter2/step4-chapter2.component';
 
-import { EasyNgxGoogleAnalyticsModule} from 'easy-ngx-google-analytics';
 
 @NgModule({
   declarations: [
@@ -56,7 +55,6 @@ import { EasyNgxGoogleAnalyticsModule} from 'easy-ngx-google-analytics';
   ],
   imports: [
     BrowserModule,
-    EasyNgxGoogleAnalyticsModule,
     ReactiveFormsModule,
     HttpModule,
     AppRoutingModule,
