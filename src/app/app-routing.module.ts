@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { SignupComponent } from './signup/signup.component';
 import { Step1Chapter1Component } from './step1-chapter1/step1-chapter1.component';
 import { Step1Chapter2Component } from './step1-chapter2/step1-chapter2.component';
 import { Step2Chapter1Component } from './step2-chapter1/step2-chapter1.component';
